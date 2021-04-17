@@ -9,6 +9,7 @@ public class MergeSort {
         for (int i = 0; i < 30; i++) {
             A[i] = (int)(Math.random()*k);
         }
+        System.out.println(Arrays.toString(A));
         MergeSort(A, 0, A.length - 1);
         System.out.println(Arrays.toString(A));
 

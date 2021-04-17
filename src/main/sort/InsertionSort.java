@@ -9,6 +9,7 @@ public class InsertionSort {
         for (int i = 0; i < 30; i++) {
             A[i] = (int)(Math.random()*k);
         }
+        System.out.println(Arrays.toString(A));
         InsertionSort(A);
         System.out.println(Arrays.toString(A));
 
