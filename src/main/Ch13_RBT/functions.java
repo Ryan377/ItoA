@@ -19,6 +19,5 @@ public class functions {
 
     public void RightRotate(RBT T, Node x) {
         Node y = x.left; // set y
-
     }
 }
