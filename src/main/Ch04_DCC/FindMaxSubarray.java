@@ -1,4 +1,4 @@
-package DCC;
+package Ch04_DCC;
 
 public class FindMaxSubarray {
     public static void main(String[] args) {

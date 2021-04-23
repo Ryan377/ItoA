@@ -1,4 +1,4 @@
-package BST;
+package Ch12_BST;
 
 public class functions {
     public void InoderedTreeWalk(Node x) {

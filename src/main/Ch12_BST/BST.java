@@ -1,4 +1,4 @@
-package BST;
+package Ch12_BST;
 
 public class BST {
     public Node root;
@@ -6,9 +6,6 @@ public class BST {
     public BST(Node root) {
         this.root = root;
     }
-
-
-
 }
 
 

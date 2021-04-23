@@ -1,4 +1,4 @@
-package BST;
+package Ch12_BST;
 
 public class Node {
     public int key;
