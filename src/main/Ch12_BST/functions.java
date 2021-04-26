@@ -100,6 +100,13 @@ public class functions {
     }
 
     private void Transplant(BST t, Node u, Node v) {
+        if (u.p == null)
+            t.root = v;
+        else if (u == u.p.left)
+            u.p.left = v;
+        else u.p.right = v;
+        if (v != null)
+            v.p = u.p;
 
     }
 }
