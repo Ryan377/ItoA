@@ -1,4 +1,4 @@
-package Ch02_06_07_08_09_SORT;
+package Ch02_06to09_SORT;
 
 import java.util.Arrays;
 
