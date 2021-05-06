@@ -1,4 +1,4 @@
-package Ch02_06to09_SORT;
+package Ch02_06to09_Sort;
 
 import java.util.*;
 

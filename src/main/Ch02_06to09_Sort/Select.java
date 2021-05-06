@@ -1,25 +1,24 @@
-package Ch02_06to09_SORT;
+package Ch02_06to09_Sort;
 
-import java.util.Arrays;
-
-public class QuickSort {
+public class Select {
     public static void main(String[] args) {
-        int[] A = new int[30];
-        for (int i = 0; i < 30; i++) {
-            A[i] = (int)(Math.random()*20);
+        int[] A = new int[10];
+        for (int i = 0; i < A.length; i++) {
+            A[i] = i;
         }
-        System.out.println(Arrays.toString(A));
-        quicksort(A, 0, A.length - 1);
-        System.out.println(Arrays.toString(A));
-
+        System.out.println(randomSelect(A, 0, A.length - 1, 4));
     }
 
-    public static void quicksort(int[] A, int p, int r) {
-        if (p < r) {
-            int q = random_partition(A, p, r);
-            quicksort(A, p, q - 1);
-            quicksort(A, q + 1, r);
-        }
+    public static int randomSelect(int[] A, int p, int r, int i) {
+        if (p == r)
+            return A[p];
+        int q = random_partition(A, p, r);
+        int k = q - p + 1;
+        if (i == k)
+            return A[q];
+        if (i < k)
+            return randomSelect(A, p, q - 1, i);
+        return randomSelect(A, q + 1, r, i - k);
     }
 
     public static int partition(int[] A, int p, int r) {
