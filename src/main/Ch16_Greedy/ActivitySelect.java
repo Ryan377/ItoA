@@ -32,6 +32,5 @@ public class ActivitySelect {
 
         }
         return count;
-
     }
 }
