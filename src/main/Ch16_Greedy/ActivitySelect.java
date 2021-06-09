@@ -29,7 +29,6 @@ public class ActivitySelect {
             } else {
                 a[i] = false;
             }
-
         }
         return count;
     }
